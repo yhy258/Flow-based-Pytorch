@@ -1,1 +1,1 @@
-# Flow-Based-GM-Pytorch
+# Flow-based-Pytorch
