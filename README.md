@@ -4,7 +4,7 @@
 paper : https://arxiv.org/pdf/1410.8516.pdf  
 Model : https://github.com/yhy258/Flow-based-Pytorch/blob/master/NICE.py  
 
-설명 :   
+설명 : https://deepseow.tistory.com/45  
 
 
 후기 :  
