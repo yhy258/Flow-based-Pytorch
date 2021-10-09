@@ -26,4 +26,5 @@ Model : https://github.com/yhy258/Flow-based-Pytorch/blob/master/glow.py
 후기 : ![Glow output](https://github.com/yhy258/Flow-based-Pytorch/blob/master/images/glow.png?raw=true)  
   
 EPOCH : 50 epoch으로 train한 후 sampling 결과. 하이퍼 파라미터는 오피셜과 동일하게 했지만 왜 이렇게 결과가 안나오는지는 잘 모르겠음..  
+-> 훈련이 부족해서인듯 싶다. paper에서도 1400 에폭정도 돌렸을 때 NLL이 수렴함을 보였고, 어떤 pytorch 구현체는 200000 에폭을 돌렸을때 좋은 결과를 보여줬다. 하지만 나는 자원이 부족해 그렇게 돌리기가 쉽지않아 우선 여기에서 마무리하겠음.  
 permutation 작업을 1x1 invertible convolution으로 대체 했다는 점이 흥미로웠다.  
