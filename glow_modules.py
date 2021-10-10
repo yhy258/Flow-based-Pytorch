@@ -193,11 +193,11 @@ class Coupling(nn.Module):
 
         if reverse:
             z2 = z2 / s - t
-            log_det -= torch.sum(torch.log(s).view(bs, -1), dim=-1)
+            log_det -= torch.sum(torch.log(torch.abs(s)).view(bs, -1), dim=-1)
 
         else:
             z2 = s * (z2 + t)
-            log_det = torch.sum(torch.log(s).view(bs, -1), dim=-1) + log_det
+            log_det = torch.sum(torch.log(torch.abs(s)).view(bs, -1), dim=-1) + log_det
 
         out = torch.cat([z1, z2], dim=1)
         return out, log_det
